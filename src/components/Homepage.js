@@ -1,3 +1,5 @@
+import React from 'react';
+
 function Homepage({setType}) {
     function handleSubmit(e)
     {
