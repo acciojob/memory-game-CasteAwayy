@@ -16,12 +16,11 @@ function Mode({ tiles }) {
     const [lastNumber, setLastNumber] = useState(-1);
     const [tries, setTries] = useState(0);
     return (
-        <>
+         <>
+            <h1>GAmE YO</h1>
             <h4>Tries: {tries}</h4>
-             <div className="cells_container">
-                <div className="grid">
-                    {board.map((number, idx) => <Number lastNumber={lastNumber} setLastNumber={setLastNumber} key={idx} tries={tries} setTries={setTries} number={number} />)}
-                </div>
+            <div className="cells_container">
+                {board.map((number, idx) => <Number lastNumber={lastNumber} setLastNumber={setLastNumber} key={idx} tries={tries} setTries={setTries} number={number} />)}
             </div>
         </>
     )
