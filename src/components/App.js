@@ -12,9 +12,8 @@ const gameTiles = {
 function App() {
     const [type, setType] = useState(null);
     return (type ?
-        <GameMode>
-            <Mode tiles={gameTiles[type]} />
-        </GameMode> : <Homepage setType={setType} />)
+        <Mode tiles={gameTiles[type]} />
+        : <Homepage setType={setType} />)
 }
 
 export default App
