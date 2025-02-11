@@ -5,7 +5,7 @@ function GameMode({ children }) {
 
     return (
         <div className="game_mode">
-            <h1>Game Yo</h1>
+            <h1>GAmE YO</h1>
             {children}
         </div>
     )
