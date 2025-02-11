@@ -18,8 +18,10 @@ function Mode({ tiles }) {
     return (
         <>
             <h4>Tries: {tries}</h4>
-            <div className="cells_container">
-                {board.map((number, idx) => <Number lastNumber={lastNumber} setLastNumber={setLastNumber} key={idx} tries={tries} setTries={setTries} number={number} />)}
+             <div className="cells_container">
+                <div className="grid">
+                    {board.map((number, idx) => <Number lastNumber={lastNumber} setLastNumber={setLastNumber} key={idx} tries={tries} setTries={setTries} number={number} />)}
+                </div>
             </div>
         </>
     )
