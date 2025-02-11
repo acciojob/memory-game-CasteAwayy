@@ -20,7 +20,7 @@ function Homepage({setType}) {
                 <input type="radio" value={'hard'}  name="type" id="hard" />
                 <label htmlFor="hard">Hard</label>
             </div>
-            <button type="submit">Start</button>
+            
         </form>
         </>
     )
