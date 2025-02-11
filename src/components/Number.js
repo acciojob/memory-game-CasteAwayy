@@ -9,7 +9,7 @@ function Number({ number, lastNumber, setLastNumber, tries, setTries }) {
         setLastNumber(number);
         setIsClicked(true)
     }
-    return <div className='number' onClick={() => handleClick(number)}>{isClicked ? number : null}</div>
+    return <span className='number' onClick={() => handleClick(number)}>{isClicked ? number : null}</span>
 }
 
 export default Number
