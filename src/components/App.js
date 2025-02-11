@@ -1,8 +1,8 @@
 import { useState } from "react"
 import React from 'react';
-import Homepage from "Homepage"
-import GameMode from "GameMode";
-import Mode from "Mode"
+import Homepage from "./Homepage"
+import GameMode from "./GameMode";
+import Mode from "./Mode"
 
 const gameTiles = {
     'easy': 8,
