@@ -52,7 +52,7 @@ input[type='radio']{
         padding: 1rem 0;
     }
 }
-.cells_container .grid{
+.cells_container{
     display:  grid;
     grid-template-columns: repeat(4,1fr);
     max-height: 80dvh;
