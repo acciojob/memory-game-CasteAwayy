@@ -23,7 +23,9 @@ function Mode({ tiles }) {
             <div className="cells_container">
                 {board.map((number, idx) => <Number lastNumber={lastNumber} setLastNumber={setLastNumber} key={idx} tries={tries} setTries={setTries} number={number} />)}
             </div>
+        <div>
         <div></div>
+        <div></div></div>
             </div>
         </>
     )
