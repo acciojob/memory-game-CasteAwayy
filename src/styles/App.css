@@ -52,15 +52,16 @@ input[type='radio']{
         padding: 1rem 0;
     }
 }
+
 .cells_container{
     display:  grid;
     grid-template-columns: repeat(4,1fr);
-    max-height: 80dvh;
+    grid-template-rows: 1fr 1fr;
+    /* max-height: 80dvh; */
     gap: 1rem;
 
     overflow: scroll;
 }
-
 .number{
     height: 100px;
     background-color: orange;
