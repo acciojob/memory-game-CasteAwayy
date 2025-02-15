@@ -4,7 +4,7 @@ function App() {
     const [type, setType] = useState("");
     return (
         <div>
-            <h1>Welcome!</h1>
+            <h4>Welcome!</h4>
             <div className="levels_container">
                 <input
                     type="radio"
