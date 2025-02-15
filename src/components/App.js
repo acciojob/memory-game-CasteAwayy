@@ -68,15 +68,6 @@ function Mode({ tiles }) {
                 <div onClick={handleClick}>
                     <span>1</span>
                 </div>
-                <div onClick={handleClick}>
-                    <span>1</span>
-                </div>
-                <div onClick={handleClick}>
-                    <span>1</span>
-                </div>
-                <div onClick={handleClick}>
-                    <span>1</span>
-                </div>
             </div>
             <div>
                 <div onClick={handleClick}>
@@ -85,20 +76,8 @@ function Mode({ tiles }) {
                 <div onClick={handleClick}>
                     <span>1</span>
                 </div>
-                <div onClick={handleClick}>
-                    <span>1</span>
-                </div>
-                <div onClick={handleClick}>
-                    <span>1</span>
-                </div>
             </div>
             <div>
-                <div onClick={handleClick}>
-                    <span>1</span>
-                </div>
-                <div onClick={handleClick}>
-                    <span>1</span>
-                </div>
                 <div onClick={handleClick}>
                     <span>1</span>
                 </div>
