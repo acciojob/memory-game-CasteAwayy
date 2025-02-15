@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 
+const tiles = {
+    easy: 8,
+    normal: 16,
+    hard: 32,
+};
 function App() {
     const [type, setType] = useState("");
-    return <>{!type ? <Home setType={setType} /> : <Mode type={type} />}</>;
+    return (
+        <>{!type ? <Home setType={setType} /> : <Mode tiles={tiles[type]} />}</>
+    );
 }
 function Home({ setType }) {
     function handleSubmit(e) {
@@ -42,23 +49,24 @@ function Home({ setType }) {
     );
 }
 
-function Mode({ type }) {
+function Mode({ tiles }) {
+    const [tries, setTries] = useState(0);
     return (
         <div>
             <p>Game Yo</p>
-            <h4>Tries: 0</h4>
+            <h4>Tries: {tries}</h4>
             <div>
-              <div>
-                <span>1</span>
-              </div>
+                <div onClick={() => setTries(tries + 1)}>
+                    <span>1</span>
+                </div>
             </div>
             <div>
-            <div>
-                <span>1</span>
-              </div>
-              <div>
-                <span>1</span>
-              </div>
+                <div onClick={() => setTries(tries + 1)}>
+                    <span>1</span>
+                </div>
+                <div onClick={() => setTries(tries + 1)}>
+                    <span>1</span>
+                </div>
             </div>
         </div>
     );
