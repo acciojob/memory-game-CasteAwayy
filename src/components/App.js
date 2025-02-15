@@ -1,19 +1,39 @@
-import { useState } from "react"
-import React from 'react';
-import Homepage from "./Homepage"
-import GameMode from "./GameMode";
-import Mode from "./Mode"
+import React, { useState } from "react";
 
-const gameTiles = {
-    'easy': 8,
-    'normal': 16,
-    'hard': 32,
-}
 function App() {
-    const [type, setType] = useState(null);
-    return (type ?
-        <Mode tiles={gameTiles[type]} />
-        : <Homepage setType={setType} />)
+    const [type, setType] = useState("");
+    return (
+        <div>
+            <h1>Welcome!</h1>
+            <div className="levels_container">
+                <input
+                    type="radio"
+                    id="easy"
+                    name="level_type"
+                    value={type}
+                    onChange={() => setType("easy")}
+                />
+                <label htmlFor="easy">Easy</label>
+                <input
+                    type="radio"
+                    id="normal"
+                    name="level_type"
+                    value={type}
+                    onChange={() => setType("normal")}
+                />
+                <label htmlFor="normal">Normal</label>
+                <input
+                    type="radio"
+                    id="hard"
+                    name="level_type"
+                    value={type}
+                    onChange={() => setType("hard")}
+                />
+                <label htmlFor="hard">Hard</label>
+            </div>
+            <button>Start</button>
+        </div>
+    );
 }
 
-export default App
+export default App;
