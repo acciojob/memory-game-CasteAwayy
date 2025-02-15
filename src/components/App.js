@@ -50,7 +50,7 @@ function Home({ setType }) {
 }
 
 function Mode({ tiles }) {
-    const [tries, setTries] = useState(0);
+    const [tries, setTries] = useState(1);
     return (
         <div>
             <p>Game Yo</p>
