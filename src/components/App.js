@@ -47,11 +47,12 @@ function Mode({ type }) {
         <div>
             <p>Game Yo</p>
             <h4>Tries: 0</h4>
-            <div className="cells_container">
-               <div>
+            <div>
+                <span>1</span>
+            </div>
+            <div>
                 <span>1</span>
                 <span>1</span>
-              </div>
             </div>
         </div>
     );
