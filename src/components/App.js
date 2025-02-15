@@ -50,21 +50,30 @@ function Home({ setType }) {
 }
 
 function Mode({ tiles }) {
-    const [tries, setTries] = useState(1);
+    const [tries, setTries] = useState(0);
+    const [clicked, setClicked] = useState(-1);
+
+    function handleClick() {
+        setClicked((clicked) => {
+            return clicked + 1;
+        });
+        console.log(clicked);
+        if (clicked % 2 === 0) setTries(tries + 1);
+    }
     return (
         <div>
             <p>Game Yo</p>
             <h4>Tries: {tries}</h4>
             <div>
-                <div onClick={() => setTries(tries + 1)}>
+                <div onClick={handleClick}>
                     <span>1</span>
                 </div>
             </div>
             <div>
-                <div onClick={() => setTries(tries + 1)}>
+                <div onClick={handleClick}>
                     <span>1</span>
                 </div>
-                <div onClick={() => setTries(tries + 1)}>
+                <div onClick={handleClick}>
                     <span>1</span>
                 </div>
             </div>
