@@ -48,11 +48,17 @@ function Mode({ type }) {
             <p>Game Yo</p>
             <h4>Tries: 0</h4>
             <div>
+              <div>
                 <span>1</span>
+              </div>
             </div>
             <div>
+            <div>
                 <span>1</span>
+              </div>
+              <div>
                 <span>1</span>
+              </div>
             </div>
         </div>
     );
