@@ -2,38 +2,52 @@ import React, { useState } from "react";
 
 function App() {
     const [type, setType] = useState("");
+    return <>{!type ? <Home setType={setType} /> : <Mode type={type} />}</>;
+}
+function Home({ setType }) {
+    function handleSubmit(e) {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const { level_type } = Object.fromEntries(formData);
+        setType(level_type);
+    }
     return (
-        <div>
-            <h4>Welcome!</h4>
+        <form onSubmit={handleSubmit}>
+            <h1>Welcome!</h1>
             <div className="levels_container">
                 <input
                     type="radio"
                     id="easy"
                     name="level_type"
-                    value={type}
-                    onChange={() => setType("easy")}
+                    defaultValue="easy"
                 />
                 <label htmlFor="easy">Easy</label>
                 <input
                     type="radio"
                     id="normal"
                     name="level_type"
-                    value={type}
-                    onChange={() => setType("normal")}
+                    defaultValue="normal"
                 />
                 <label htmlFor="normal">Normal</label>
                 <input
                     type="radio"
                     id="hard"
                     name="level_type"
-                    value={type}
-                    onChange={() => setType("hard")}
+                    defaultValue="hard"
                 />
                 <label htmlFor="hard">Hard</label>
             </div>
-            <button>Start</button>
-        </div>
+            <button type="submit">Start</button>
+        </form>
     );
 }
 
+function Mode({ type }) {
+    return (
+        <div>
+            <p>Game Yo</p>
+            <h4>Tries: 0</h4>
+        </div>
+    );
+}
 export default App;
