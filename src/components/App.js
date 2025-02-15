@@ -61,7 +61,7 @@ function Mode({ tiles }) {
         if (clicked % 2 === 0) setTries(tries + 1);
     }
     return (
-        <div>
+        <>
             <p>Game Yo</p>
             <h4>Tries: {tries}</h4>
             <div>
@@ -88,7 +88,7 @@ function Mode({ tiles }) {
                     <span>1</span>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 export default App;
