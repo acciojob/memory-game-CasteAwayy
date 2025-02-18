@@ -24,7 +24,7 @@ function Mode({ tiles }) {
                         width: "100px",
                         aspectRatio: "1",
                     }}
-                ></div>
+                ><span></span></div>
                 <div
                     style={{
                         background: "orange",
