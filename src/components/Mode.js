@@ -17,14 +17,16 @@ function Mode({ tiles }) {
         <>
             <h1>GAmE YO</h1>
             <h4>Tries: {tries}</h4>
-            <div className="cell_container">
+            <div>
                 <div
                     style={{
                         background: "orange",
                         width: "100px",
                         aspectRatio: "1",
                     }}
-                ><span></span></div>
+                >
+                    <span></span>
+                </div>
                 <div
                     style={{
                         background: "orange",
@@ -32,6 +34,40 @@ function Mode({ tiles }) {
                         aspectRatio: "1",
                     }}
                 ></div>
+                <div
+                    style={{
+                        background: "orange",
+                        width: "100px",
+                        aspectRatio: "1",
+                    }}
+                ></div>
+                <div
+                    style={{
+                        background: "orange",
+                        width: "100px",
+                        aspectRatio: "1",
+                    }}
+                ></div>
+            </div>
+            <div>
+                <div
+                    style={{
+                        background: "orange",
+                        width: "100px",
+                        aspectRatio: "1",
+                    }}
+                >
+                    <span></span>
+                </div>
+                <div
+                    style={{
+                        background: "orange",
+                        width: "100px",
+                        aspectRatio: "1",
+                    }}
+                >
+                    <span></span>
+                </div>
                 <div
                     style={{
                         background: "orange",
