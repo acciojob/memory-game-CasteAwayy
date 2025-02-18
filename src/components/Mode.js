@@ -10,6 +10,8 @@ function initState(tiles) {
     return arr;
 }
 
+let clicked = 0;
+
 function Mode({ tiles }) {
     const boardTiles = initState;
     const [tries, setTries] = useState(0);
@@ -23,6 +25,11 @@ function Mode({ tiles }) {
                         background: "orange",
                         width: "100px",
                         aspectRatio: "1",
+                        margin: "10px",
+                    }}
+                    onClick={() => {
+                        clicked++;
+                        if (!(clicked & 1)) setTries(tries + 1);
                     }}
                 >
                     <span></span>
@@ -32,22 +39,43 @@ function Mode({ tiles }) {
                         background: "orange",
                         width: "100px",
                         aspectRatio: "1",
+                        margin: "10px",
                     }}
-                ></div>
+                    onClick={() => {
+                        clicked++;
+                        if (!(clicked & 1)) setTries(tries + 1);
+                    }}
+                >
+                    <span></span>
+                </div>
                 <div
                     style={{
                         background: "orange",
                         width: "100px",
                         aspectRatio: "1",
+                        margin: "10px",
                     }}
-                ></div>
+                    onClick={() => {
+                        clicked++;
+                        if (!(clicked & 1)) setTries(tries + 1);
+                    }}
+                >
+                    <span></span>
+                </div>
                 <div
                     style={{
                         background: "orange",
                         width: "100px",
                         aspectRatio: "1",
+                        margin: "10px",
                     }}
-                ></div>
+                    onClick={() => {
+                        clicked++;
+                        if (!(clicked & 1)) setTries(tries + 1);
+                    }}
+                >
+                    <span></span>
+                </div>
             </div>
             <div>
                 <div
@@ -55,6 +83,11 @@ function Mode({ tiles }) {
                         background: "orange",
                         width: "100px",
                         aspectRatio: "1",
+                        margin: "10px",
+                    }}
+                    onClick={() => {
+                        clicked++;
+                        if (!(clicked & 1)) setTries(tries + 1);
                     }}
                 >
                     <span></span>
@@ -64,6 +97,11 @@ function Mode({ tiles }) {
                         background: "orange",
                         width: "100px",
                         aspectRatio: "1",
+                        margin: "10px",
+                    }}
+                    onClick={() => {
+                        clicked++;
+                        if (!(clicked & 1)) setTries(tries + 1);
                     }}
                 >
                     <span></span>
@@ -73,15 +111,29 @@ function Mode({ tiles }) {
                         background: "orange",
                         width: "100px",
                         aspectRatio: "1",
+                        margin: "10px",
                     }}
-                ></div>
+                    onClick={() => {
+                        clicked++;
+                        if (!(clicked & 1)) setTries(tries + 1);
+                    }}
+                >
+                    <span></span>
+                </div>
                 <div
                     style={{
                         background: "orange",
                         width: "100px",
                         aspectRatio: "1",
+                        margin: "10px",
                     }}
-                ></div>
+                    onClick={() => {
+                        clicked++;
+                        if (!(clicked & 1)) setTries(tries + 1);
+                    }}
+                >
+                    <span></span>
+                </div>
             </div>
         </>
     );
