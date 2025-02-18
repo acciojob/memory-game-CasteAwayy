@@ -19,76 +19,36 @@ function Home({ setType }) {
         setType(level_type);
     }
     return (
-        <form onSubmit={handleSubmit}>
-            <h1>Welcome!</h1>
-            <div className="levels_container">
-                <input
-                    type="radio"
-                    id="easy"
-                    name="level_type"
-                    defaultValue="easy"
-                />
-                <label htmlFor="easy">Easy</label>
-                <input
-                    type="radio"
-                    id="normal"
-                    name="level_type"
-                    defaultValue="normal"
-                />
-                <label htmlFor="normal">Normal</label>
-                <input
-                    type="radio"
-                    id="hard"
-                    name="level_type"
-                    defaultValue="hard"
-                />
-                <label htmlFor="hard">Hard</label>
-            </div>
-            <button type="submit">Start</button>
-        </form>
-    );
-}
-
-function Mode({ tiles }) {
-    const [tries, setTries] = useState(0);
-    const [clicked, setClicked] = useState(-1);
-
-    function handleClick() {
-        setClicked((clicked) => {
-            return clicked + 1;
-        });
-        console.log(clicked);
-        if (clicked % 2 === 0) setTries(tries + 1);
-    }
-    return (
         <>
-            <p>Game Yo</p>
-            <h4>Tries: {tries}</h4>
-            <div>
-                <div onClick={handleClick}>
-                    <span>1</span>
+            <h1>Welcome!</h1>
+            <form onSubmit={handleSubmit}>
+                <div className="levels_container">
+                    <input
+                        type="radio"
+                        id="easy"
+                        name="level_type"
+                        defaultValue="easy"
+                    />
+                    <label htmlFor="easy">Easy</label>
+                    <input
+                        type="radio"
+                        id="normal"
+                        name="level_type"
+                        defaultValue="normal"
+                    />
+                    <label htmlFor="normal">Normal</label>
+                    <input
+                        type="radio"
+                        id="hard"
+                        name="level_type"
+                        defaultValue="hard"
+                    />
+                    <label htmlFor="hard">Hard</label>
                 </div>
-            </div>
-            <div>
-                <div onClick={handleClick}>
-                    <span>1</span>
-                </div>
-                <div onClick={handleClick}>
-                    <span>1</span>
-                </div>
-            </div>
-            <div>
-                <div onClick={handleClick}>
-                    <span>1</span>
-                </div>
-                <div onClick={handleClick}>
-                    <span>1</span>
-                </div>
-                <div onClick={handleClick}>
-                    <span>1</span>
-                </div>
-            </div>
+                <button type="submit">Start</button>
+            </form>
         </>
     );
 }
+
 export default App;
