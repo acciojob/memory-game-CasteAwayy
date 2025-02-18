@@ -17,8 +17,35 @@ function Mode({ tiles }) {
         <>
             <h1>GAmE YO</h1>
             <h4>Tries: {tries}</h4>
-            <div>
-                <div></div>
+            <div className="cell_container">
+                <div
+                    style={{
+                        background: "orange",
+                        width: "100px",
+                        aspectRatio: "1",
+                    }}
+                ></div>
+                <div
+                    style={{
+                        background: "orange",
+                        width: "100px",
+                        aspectRatio: "1",
+                    }}
+                ></div>
+                <div
+                    style={{
+                        background: "orange",
+                        width: "100px",
+                        aspectRatio: "1",
+                    }}
+                ></div>
+                <div
+                    style={{
+                        background: "orange",
+                        width: "100px",
+                        aspectRatio: "1",
+                    }}
+                ></div>
             </div>
         </>
     );
