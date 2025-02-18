@@ -48,34 +48,6 @@ function Mode({ tiles }) {
                 >
                     <span></span>
                 </div>
-                <div
-                    style={{
-                        background: "orange",
-                        width: "100px",
-                        aspectRatio: "1",
-                        margin: "10px",
-                    }}
-                    onClick={() => {
-                        clicked++;
-                        if (!(clicked & 1)) setTries(tries + 1);
-                    }}
-                >
-                    <span></span>
-                </div>
-                <div
-                    style={{
-                        background: "orange",
-                        width: "100px",
-                        aspectRatio: "1",
-                        margin: "10px",
-                    }}
-                    onClick={() => {
-                        clicked++;
-                        if (!(clicked & 1)) setTries(tries + 1);
-                    }}
-                >
-                    <span></span>
-                </div>
             </div>
             <div>
                 <div
